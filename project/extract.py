@@ -1,7 +1,9 @@
+"""This is a module that extracts from a csv file"""
 import csv
 from models import PatientRecord
 
 def extract(file_path: str) -> list[PatientRecord]:
+    """This function extracts data from a csv file"""
     records = []
 
     with open(file_path, newline="") as file:
